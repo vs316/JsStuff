@@ -54,8 +54,8 @@ const typed = new Typed(".multiple-text", {
     "Guitar Enthusiast",
     "Aspiring Cloud Engineer",
   ],
-  typeSpeed: 10,
-  backSpeed: 50,
-  backDelay: 100,
+  typeSpeed: 100,
+  backSpeed: 100,
+  backDelay: 1000,
   loop: true,
 });
