@@ -58,7 +58,38 @@ section {
   font-weight: 600;
   cursor: default;
 }
-
+.logo > .magic-text {
+  animation: background-pan 3s linear infinite;
+  background: linear-gradient(
+    to right,
+    var(--purple),
+    var(--violet),
+    var(--pink),
+    var(--blue),
+    var(--purple)
+  );
+  background-size: 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+}
+/*.logo > .magic-star {
+  --size: clamp(10px, 0.75vw, 15px);
+  display: block;
+  height: var(--size);
+  left: var(--star-left);
+  position: absolute;
+  top: var(--star-top);
+  width: var(--size);
+}
+.logo > .magic-star > svg {
+  display: block;
+  opacity: 0.7;
+}
+.logo > .magic-star > svg > path {
+  fill: var(--violet);
+}*/
 .navbar a {
   font-size: 1.7rem;
   color: var(--text-color);
@@ -157,6 +188,7 @@ span {
     var(--purple),
     var(--violet),
     var(--pink),
+    var(--blue),
     var(--purple)
   );
   background-size: 200%;
@@ -256,6 +288,7 @@ span {
     var(--purple),
     var(--violet),
     var(--pink),
+    var(--blue),
     var(--purple)
   );
   background-size: 200%;
@@ -370,6 +403,7 @@ span {
     var(--purple),
     var(--violet),
     var(--pink),
+    var(--blue),
     var(--purple)
   );
   background-size: 200%;
