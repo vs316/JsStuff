@@ -1,0 +1,26 @@
+{
+  "name": "portfoliofirst",
+  "version": "1.0.0",
+  "description": "My Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vs316/JsStuff.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Vachan Shetty",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vs316/JsStuff/issues"
+  },
+  "homepage": "https://github.com/vs316/JsStuff#readme",
+  "dependencies": {
+    "build": "^0.1.4",
+    "start": "^5.1.0"
+  }
+}

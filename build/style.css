@@ -15,7 +15,11 @@
   --bg-color: #1f242d;
   --second-bg-color: #323946;
   --text-color: #fff;
-  --main-color: #0ef;
+  --main-color: #fc0;
+  --purple: rgb(123, 31, 162);
+  --violet: rgb(103, 58, 183);
+  --pink: rgb(244, 143, 177);
+  --blue: #0ef;
 }
 
 html {
@@ -117,7 +121,50 @@ span {
   font-weight: 900;
   line-height: 1.3;
 }
+@keyframes background-pan {
+  from {
+    background-position: 0 center;
+  }
+  to {
+    background-position: -200% center;
+  }
+}
 
+/*.home-content h1 > .magic {
+  display: inline-block;
+  position: relative;
+}
+.home-content h1 > .magic > .magic-star > svg {
+  display: block;
+  opacity: 0.7;
+}
+.home-content h1 > .magic > .magic-star > svg > path {
+  fill: var(--violet);
+}
+.home-content h1 > .magic > .magic-star {
+  --size: clamp(10px, 0.75vw, 15px);
+  display: block;
+  height: var(--size);
+  left: var(--star-left);
+  position: absolute;
+  top: var(--star-top);
+  width: var(--size);
+}*/
+.home-content h1 > .magic > .magic-text {
+  animation: background-pan 3s linear infinite;
+  background: linear-gradient(
+    to right,
+    var(--purple),
+    var(--violet),
+    var(--pink),
+    var(--purple)
+  );
+  background-size: 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+}
 .home .home-content {
   width: 45%;
 
@@ -126,7 +173,6 @@ span {
 
 .home .home-img {
   width: 45%;
-
   text-align: center;
 }
 
@@ -202,6 +248,23 @@ span {
 .about-content h3 {
   font-size: 2.6rem;
 }
+.about-content h3 > .magic-text {
+  font-size: 3 rem;
+  animation: background-pan 3s linear infinite;
+  background: linear-gradient(
+    to right,
+    var(--purple),
+    var(--violet),
+    var(--pink),
+    var(--purple)
+  );
+  background-size: 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+}
+
 .about-content p {
   font-size: 1.6rem;
   margin: 2rem 0 3rem;
@@ -282,7 +345,7 @@ span {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
+  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--blue));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -299,6 +362,21 @@ span {
 
 .portfolio-layer h4 {
   font-size: 3rem;
+}
+.portfolio-layer h4 > .magic-text {
+  animation: background-pan 3s linear infinite;
+  background: linear-gradient(
+    to right,
+    var(--purple),
+    var(--violet),
+    var(--pink),
+    var(--purple)
+  );
+  background-size: 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
 }
 .portfolio-layer p {
   font-size: 1.6rem;
@@ -415,7 +493,7 @@ span {
   }
 
   .contact {
-    min-height: auto;
+    min-height: initial;
   }
 
   .footer {
