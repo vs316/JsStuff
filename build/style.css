@@ -21,6 +21,8 @@
   --pink: rgb(244, 143, 177);
   --blue: #0ef;
   --orange: #ff8d1a;
+  --gold: #cfb53b;
+  --white: #fff;
 }
 
 html {
@@ -67,7 +69,10 @@ section {
     var(--violet),
     var(--blue),
     var(--pink),
-    var(--purple)
+    var(--purple),
+    var(--gold),
+    var(--orange),
+    var(--white)
   );
   background-size: 200%;
   -webkit-background-clip: text;
@@ -189,9 +194,12 @@ span {
     to right,
     var(--purple),
     var(--violet),
-    var(--pink),
     var(--blue),
-    var(--purple)
+    var(--pink),
+    var(--purple),
+    var(--gold),
+    var(--orange),
+    var(--white)
   );
   background-size: 200%;
   -webkit-background-clip: text;
@@ -303,9 +311,12 @@ span {
     to right,
     var(--purple),
     var(--violet),
-    var(--pink),
     var(--blue),
-    var(--purple)
+    var(--pink),
+    var(--purple),
+    var(--gold),
+    var(--orange),
+    var(--white)
   );
   background-size: 200%;
   -webkit-background-clip: text;
@@ -418,10 +429,14 @@ span {
   animation: background-pan 3s linear infinite;
   background: linear-gradient(
     to right,
-    var(--blue),
     var(--purple),
     var(--violet),
-    var(--blue)
+    var(--blue),
+    var(--pink),
+    var(--purple),
+    var(--gold),
+    var(--orange),
+    var(--white)
   );
   background-size: 200%;
   -webkit-background-clip: text;
